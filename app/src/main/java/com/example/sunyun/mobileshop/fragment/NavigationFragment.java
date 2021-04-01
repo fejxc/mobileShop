@@ -33,6 +33,8 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_navigation,container,false);
+        initView(view);
+        setTabSelected(R.id.item_linear_home);
         return view;
     }
 
