@@ -19,14 +19,17 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
 
     private LinearLayout itemLinerHome;
     private LinearLayout itemLinearCategory;
+    private LinearLayout itemLinerCart;
 
     private ImageView itemImgeHome;
     private ImageView itemImgeCategory;
+    private ImageView itemImgCart;
 
     private android.app.FragmentTransaction fragmentTransaction;
 
     private HomeFragment homeFragment;
     private CategoryFragment categoryFragment;
+    private CartFragment cartFragment;
 
 
     @Nullable
@@ -60,7 +63,7 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
      private void setTabSelected(int id){
          //初始化图片白色
          itemImgeHome.setImageResource(R.drawable.tab_item_home_focus);
-         itemImgeHome.setImageResource(R.drawable.tab_item_category_focus);
+         itemImgeCategory.setImageResource(R.drawable.tab_item_category_focus);
 
          //添加事务
          fragmentTransaction = getFragmentManager().beginTransaction();
