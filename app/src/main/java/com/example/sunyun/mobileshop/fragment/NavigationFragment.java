@@ -43,7 +43,7 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
         itemLinerHome = view.findViewById(R.id.item_linear_home);
         itemLinerHome.setOnClickListener(this);
 
-        itemLinearCategory = view.findViewById(R.id.item_linear_cart);
+        itemLinearCategory = view.findViewById(R.id.item_linear_category);
         itemLinearCategory.setOnClickListener(this);
 
         itemImgeHome = view.findViewById(R.id.item_linear_home_img);
@@ -60,7 +60,7 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
      private void setTabSelected(int id){
          //初始化图片白色
          itemImgeHome.setImageResource(R.drawable.tab_item_home_focus);
-         itemImgeHome.setImageResource(R.drawable.tab_item_cart_focus);
+         itemImgeHome.setImageResource(R.drawable.tab_item_category_focus);
 
          //添加事务
          fragmentTransaction = getFragmentManager().beginTransaction();
@@ -83,8 +83,8 @@ public class NavigationFragment extends Fragment  implements  View.OnClickListen
                      fragmentTransaction.show(homeFragment);
                  }
                  break;
-             case R.id.item_linear_cart:
-                 itemImgeCategory.setImageResource(R.drawable.tab_item_cart_normal);
+             case R.id.item_linear_category:
+                 itemImgeCategory.setImageResource(R.drawable.tab_item_category_normal);
                  if(categoryFragment == null){
                      categoryFragment = new CategoryFragment();
                      fragmentTransaction.add(R.id.content,categoryFragment);

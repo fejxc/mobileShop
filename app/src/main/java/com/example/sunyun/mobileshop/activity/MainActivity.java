@@ -8,7 +8,7 @@ import com.example.sunyun.mobileshop.fragment.NavigationFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    private NavigationFragment navigationFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         //把大容器添加到activity_base
         //通过getFragmentManage创建一个事务
         android.app.FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        NavigationFragment navigationFragment = new NavigationFragment();
+        navigationFragment = new NavigationFragment();
         fragmentTransaction.add(R.id.main_fram,navigationFragment).commit();
     }
 
