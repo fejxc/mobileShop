@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="5dp"
+    android:background="#333333">
+
+    <LinearLayout
+        android:id="@+id/item_linear_home"
+        style="@style/tab_item_linear">
+        <ImageView
+            android:id="@+id/item_linear_home_img"
+            style="@style/tab_item_image"
+            android:src="@drawable/tab_item_home_focus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_linear_category"
+        style="@style/tab_item_linear">
+        <ImageView
+            android:id="@+id/item_linear_category_img"
+            style="@style/tab_item_image"
+            android:src="@drawable/tab_item_category_focus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_linear_cart"
+        style="@style/tab_item_linear">
+        <ImageView
+            android:id="@+id/item_linear_cart_img"
+            style="@style/tab_item_image"
+            android:src="@drawable/tab_item_cart_focus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_linear_personal"
+        style="@style/tab_item_linear">
+        <ImageView
+            android:id="@+id/item_linear_personal_img"
+            style="@style/tab_item_image"
+            android:src="@drawable/tab_item_personal_focus"/>
+    </LinearLayout>
+    
+</LinearLayout>
